@@ -15,3 +15,9 @@ For details visit the readthedocs website:
 
 https://readthedocs.org/
 
+You can read Caneda help online, generated automatically from this docs at:
+
+http://caneda.readthedocs.org/en/latest/
+
+
+
