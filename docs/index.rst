@@ -6,7 +6,7 @@ For details visit the project's homepage:
 
 http://www.caneda.org
 
-.. image::/images/caneda.png
+.. image:: /images/caneda.png
 
 Contents:
 
