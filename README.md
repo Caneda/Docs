@@ -10,3 +10,8 @@ Amongs the main features, you can find:
   * Versions of the docs
   * Automatic PDF Generation
   * Integrated search
+
+For details visit the readthedocs website:
+
+https://readthedocs.org/
+
