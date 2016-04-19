@@ -1,4 +1,4 @@
-Installation instructions
+Installation Instructions
 =========================
 The following are generic instructions to compile and install Caneda on your system.
 
@@ -11,7 +11,7 @@ In order to compile Caneda sources, you will need the following libraries instal
   * Qwtplot
 
 
-Getting the latest git snapshot
+Getting the Latest Git Snapshot
 -------------------------------
 You can always get the latest Caneda version from our git repository. Please use an official release if you want to work with Caneda.  The git version might not even compile.
 
