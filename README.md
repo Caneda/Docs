@@ -29,15 +29,13 @@ The previous command will created a local copy of the html documents, and will p
 
 Read the Docs Sphinx Theme
 --------------------------
-The documentation in this repository uses a local mobile-friendly sphinx, developed by *readthedocs.org*. To work, it is locally installed (alongside *Sphinx*) by using the following command:
+The documentation in this repository uses a local mobile-friendly *Sphinx* theme, developed by *Read the Docs*. To work, it is locally installed (alongside *Sphinx*) by using the following command:
 
 ``$ pip install sphinx_rtd_theme``
 
-Or by installing it directly from your distribution repository. As an alternative, the source code for the theme could be downloaded and installed in the `docs/_themes/sphinx_rtd_theme`` directory, however the previous method was used to keep it up to date.
+or by installing it directly from your distribution repository. As an alternative, the source code for the theme could be downloaded and installed in the ``docs/_themes/sphinx_rtd_theme`` directory, however the previous method was used to keep it up to date.
 
-Currently if you import sphinx_rtd_theme in your local sphinx build, the *Read the Docs* site will fail, since it gets confused. To be able to run this theme locally and then also have it build on RTD, the following lines are added to the  ``conf.py`` file:
-
-.. code:: python
+Currently if you import *sphinx_rtd_theme* in your local sphinx build, the *Read the Docs* site will fail, since it gets confused. To be able to run this theme locally and then also have it build on RTD, the following lines are added to the  ``conf.py`` file:
 
     # on_rtd is whether we are on readthedocs.org, this line of code grabbed from docs.readthedocs.org
     on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
