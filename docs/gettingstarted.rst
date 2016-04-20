@@ -38,19 +38,56 @@ Finally, the folder browser allows you to easily access your files from a conven
 
 Create a New Design
 -------------------
-To start a new design, click on the *New* icon from the file toolbar.
+In the following example, we will introduce the basic usage by creating a simple opamp based amplifier. To start a new design, click on the *New* icon from the file toolbar.
 
-.. image:: /images/fileToolbar.png
+.. image:: /images/document-new.png
+
+A *New File* dialog will open, giving you the option to choose between several file types. For this example, we will create a new schematic file. Select the *Schematic file* option and click *OK*.
+
+.. image:: /images/fileNewDialog.png
+
+Alternatively, if you just started the program, you could have used the already opened new schematic document. Start editing you schematic, by adding components from the sidebar browser and wires from the main toolbar. The following image shows the wire tool. When you are in doubt what action performs each tool, just leave the mouse on the selected tool for a couple of seconds, and a tooltip will appear.
+
+.. image:: /images/tooltip.png
+
+Using the previous tools, create an schematic as the shown in the following image.
+
+.. image:: /images/opampAmplifier.png
+
+To edit a component property, for example the impedance value in a resistor, double click on the inserted component or select the *Edit parameters...* option on the context menu (by left mouse clicking on the component).
+
+.. image:: /images/contextMenu.png
+.. image:: /images/parametersDialog.png
+
+To perform any simulation it is always important to add, besides your desired components, at least one ground component and a simulation profile.
+
+.. image:: /images/simulationProfiles.png
+
+To get a meaningful result, you should also add a source.
+
+.. image:: /images/sources.png
+
+Once you are done, you are ready to perform your first simulation in Caneda.
 
 
 Performing Simulations
 ----------------------
+To start a new simulation, click on the simulate tool in the main toolbar.
+
+.. image:: /images/simulate.png
+
+Once the simulation is finished, a new document will open with the simulation results.
 
 .. image:: /images/simulation.png
+
+To select the displayed waveforms, click on the *Visible* option from the simulation sidebar.
+
+.. image:: /images/selectingWaveforms.png
 
 
 Text editor
 -----------
+Caneda has an embedded text editor, which allows you to create and design all kinds of text code based simulations. The most common forms are spice and hdl (verilog and vhdl) simulations. To help you realize your design, a ready to use set of templates is available from the text sidebar. Once you have your design ready, just click on the simulate tool as in the above example and Caneda will perform the simulation for you, using the appropiate tools.
 
 .. image:: /images/texteditor.png
 
