@@ -12,8 +12,20 @@ To simulate a schematic circuit, Caneda can use several simulation backends. Cur
 * https://launchpad.net/ubuntu/+source/ngspice
 * https://www.archlinux.org/packages/community/x86_64/ngspice/
 
+.. image:: /images/ngspice.png
+
 Missing ground net
 ------------------
+While performing simulations, it is always important to include at least one ground net. You can also include several ground nets and they will be all linked together. Ground nets allow the simulation to calculate the values of each node and complete successfully. They will also serve as reference nodes to the rest of the circuit, so when you inspect the resulting simulation waveforms you will know that the voltage values are calculated with respect to the ground nets.
+
+To add a ground net, simply select the *ground* component from the *components sidebar* and insert it in any net you like.
+
+.. image:: /images/ground.png
 
 Missing simulation profile
 --------------------------
+Simulation profiles are the actual commands indicating the simulation backends what kind of simulation to perform. There are several kinds of simulation profiles and which one you will choose depends on your actual needs. Some examples include transient simulations, AC simulations, operating point calculations, DC transfer function analysis, etc.
+
+To add a simulation profile, simply select a *simulation* component from the *components sidebar* and insert it anywhere in the schematic.
+
+.. image:: /images/simulationProfiles.png
