@@ -3,7 +3,7 @@ Caneda User's Manual
 
 Caneda uses *Sphinx* and *Read the Docs* as the project documentation system. *Read the Docs* hosts the documentation, making it fully searchable and easy to find, while *Sphinx* is the document format used by *Read the Docs*. *Read the Docs* supports webhooks so the docs get automatically built when you commit code.
 
-Amongs the main features of *Read the Docs*, you can find: 
+Amongs the main features of *Read the Docs*, you can find:
   * GitHub integration
   * Auto-updating
   * Internationalization of pages
@@ -13,7 +13,7 @@ Amongs the main features of *Read the Docs*, you can find:
 
 You can read Caneda's help online, generated automatically from this repository at:
 
-http://caneda.readthedocs.org/en/latest/
+http://caneda.readthedocs.io/en/latest/
 
 
 Adding Documentation
@@ -47,4 +47,4 @@ Currently if you import *sphinx_rtd_theme* in your local sphinx build, the *Read
 
     # otherwise, readthedocs.org uses their theme by default, so no need to specify it
 
-   
+
