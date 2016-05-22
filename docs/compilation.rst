@@ -2,6 +2,8 @@
 Compilation
 ###########
 
+.. note:: This document is aimed to developers and advanced users. If you just want to start working with Caneda on your electronics projects, you may jump right into the :ref:`installation` procedure or the :ref:`gettingstarted` guide.
+
 Caneda source code is hosted by GitHub. For more information, see `Caneda on GitHub`_.
 
 .. _`Caneda on GitHub`: https://github.com/Caneda/Caneda
@@ -15,9 +17,10 @@ General
 
 This section provides the basic guidelines to compile Caneda in GNU/Linux.
 
-The distribution-specific compilation procedures are detailed later on this document. 
+The distribution-specific compilation procedures are detailed later on this document, such as: 
 
---insert links to distribution-specific instructions here--
+  * :ref:`compilation-stretch`
+  * :ref:`compilation-jessie`
 
 .. note:: To obtain the distribution name and release of a particular system, execute ``lsb_release -da`` from a system console.
 
@@ -108,7 +111,9 @@ To associate Caneda file types with the application itself, execute the followin
 
 Caneda uses **Doxygen** as its code documentation for developers. 
 To generate the Doxygen documentation, use the Doxyfile file provided at the source root.
-  
+
+.. _compilation-stretch:
+
 Debian 9 Stretch/Testing
 ========================
 
@@ -174,6 +179,8 @@ To open Caneda from the Application Launcher, open **Applications** > **Developm
 Alternatively, open Caneda from a terminal emulator by executing ``caneda &``.
 
 The temporary folder ``~/temp_caneda`` may be deleted at this point.
+
+.. _compilation-jessie:
 
 Debian 8 Jessie/Stable
 ======================

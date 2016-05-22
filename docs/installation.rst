@@ -1,12 +1,25 @@
+.. _installation:
+
 ############
 Installation
 ############
+
+This document details how to install Caneda on :ref:`installation-linux` and :ref:`installation-windows` operating systems.
+
+.. _installation-linux:
 
 *********
 GNU/Linux
 *********
 
+The installation procedures for the most popular GNU/Linux distributions are provided here:
+
+  * :ref:`installation-stretch`
+  * :ref:`installation-jessie`
+
 .. note:: To obtain the distribution name and release of a particular system, execute ``lsb_release -da`` from a system console.
+
+.. _installation-stretch:
 
 Debian 9 Stretch/Testing
 ========================
@@ -36,11 +49,15 @@ To open Caneda from the Application Launcher, go to **Applications** > **Develop
 
 Alternatively, open Caneda from a terminal emulator by executing ``caneda &``.
 
+.. _installation-jessie:
+
 Debian 8 Jessie/Stable
 ======================
 
 Although Caneda is not currently available at the Debian repository for Jessie/Stable, it can be installed from its source code. 
-Please read :doc:`compilation` for step-by-step instructions.
+Please read :ref:`compilation-jessie` compilation procedure for step-by-step instructions.
+
+.. _installation-windows:
 
 *****************
 Microsoft Windows
@@ -48,6 +65,6 @@ Microsoft Windows
 
 Caneda *stable* release is currently supported in Microsoft Windows systems. 
 
-Simply download the Caneda installation executable `CanedaInstaller_<latest>.exe`_ and double-click it to begin the installation process. 
+Simply download the Caneda installation executable `CanedaInstaller_<latest>.exe`_ and open it to begin the installation process. 
 
 .. _`CanedaInstaller_<latest>.exe`: https://github.com/Caneda/Caneda/releases/download/0.2.0/CanedaInstaller_0.2.0.exe
