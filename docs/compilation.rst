@@ -25,25 +25,31 @@ Use **aptitude** to install the required/suggested packages:
   # aptitude install git cmake g++ qtbase5-dev libqt5svg5-dev qttools5-dev qttools5-dev-tools ngspice libqwt-qt5-dev 
     
 .. note:: The simulation engine **Ngspice** is a *non-free* package. Before trying to install it, edit the file **/etc/apt/sources.list** as ``root`` and make sure the keyword ``non-free`` is present in the repository details. For example: ``deb http://ftp.us.debian.org/debian/ stretch main non-free``.
-      
-Go to home folder and download Caneda source code using *git*:
+
+Create a temporary folder and change to it:
 
 .. code-block:: example
 
   $ cd ~
+  $ mkdir temp_caneda
+  $ cd temp_caneda
+      
+Get the latest Caneda *git* snapshot:
+
+.. code-block:: example
+
   $ git clone https://github.com/caneda/caneda
 
 .. note:: The default Caneda distribution is *master* (stable). To compile and install the *develop* distribution (latest), optionally execute ``git checkout develop`` after the download is completed.
     
-Optionally, download the `master`_ or the `develop`_ tarball and unpack it: 
+Or download the `master`_ or the `develop`_ tarball and unpack it: 
 
 .. _`master`: https://github.com/Caneda/Caneda/tarball/master
 .. _`develop`: https://github.com/Caneda/Caneda/tarball/develop
   
 .. code-block:: example
 
-  $ cd ~
-  $ tar -xvf Caneda-Caneda-<version>.tar.gz
+  $ tar -xvf Caneda-Caneda-<caneda-version>.tar.gz
     
 Create the folder ``build`` at the top of the source code structure and change into it:
 
@@ -70,6 +76,8 @@ To open Caneda from KDE Application Launcher, open **Applications** > **Developm
 
 Alternatively, open Caneda from a terminal emulator (e.g. Konsole) by executing ``caneda &``.
 
+The temporary folder ``~/temp_caneda`` may be deleted at this point.
+
 Debian 8 Jessie/Stable
 ======================
 
@@ -84,14 +92,21 @@ Use **aptitude** to install the required/suggested packages:
 
 .. note:: The simulation engine **Ngspice** is a *non-free* package. Before trying to install it, edit the file **/etc/apt/sources.list** as ``root`` and make sure the keyword ``non-free`` is present in the repository details. For example: ``deb http://ftp.us.debian.org/debian/ stretch main non-free``.
   
+Create a temporary folder and change to it:
+
+.. code-block:: example
+
+  $ cd ~
+  $ mkdir temp_caneda
+  $ cd temp_caneda
+      
 Download latest `Qwt libraries`_  to home folder and unpack it:
 
 .. _`Qwt libraries`: https://sourceforge.net/projects/qwt/files/latest/download
 
 .. code-block:: example
 
-  $ cd ~
-  $ tar -xvf qwt-<version>.tar.bz2
+  $ tar -xvf qwt-<qwt-version>.tar.bz2
 
 .. note:: Debian current stable distribution (Jessie) does not support Qwt yet (it is to be supported in Stretch, currently testing distribution), so its source package must be downloaded and compiled in order to install Caneda, as described below. 
 
@@ -99,7 +114,7 @@ Change to Qwt folder to configure and compile the source code:
 
 .. code-block:: example
 
-  $ cd qwt-<version>
+  $ cd qwt-<qwt-version>
   $ /usr/lib/x86_64-linux-gnu/qt5/bin/qmake qwt.pro
   $ make
 
@@ -109,24 +124,28 @@ Install Qwt into system folders:
 
   # make install
   
-Go to home folder and download Caneda source code using *git*:
+Go back to the temporary folder created earlier:
 
 .. code-block:: example
 
-  $ cd ~
+  $ cd ~/temp_caneda
+
+Get the latest Caneda *git* snapshot:
+
+.. code-block:: example
+
   $ git clone https://github.com/caneda/caneda
 
 .. note:: The default Caneda distribution is *master* (stable). To compile and install the *develop* distribution (latest), optionally execute ``git checkout develop`` after the download is completed.
     
-Optionally, download the `master`_ or the `develop`_ tarball and unpack it: 
+Or download the `master`_ or the `develop`_ tarball and unpack it: 
 
 .. _`master`: https://github.com/Caneda/Caneda/tarball/master
 .. _`develop`: https://github.com/Caneda/Caneda/tarball/develop
   
 .. code-block:: example
 
-  $ cd ~
-  $ tar -xvf Caneda-Caneda-<version>.tar.gz
+  $ tar -xvf Caneda-Caneda-<caneda-version>.tar.gz
     
 Create the folder ``build`` at the top of the source code structure and change into it:
 
@@ -153,8 +172,9 @@ To open Caneda, point explicitly to Qwt library path as follows:
     
 .. code-block:: example
 
-  $ LD_LIBRARY_PATH=/usr/local/qwt-6.1.2/lib/ caneda &
+  $ LD_LIBRARY_PATH=/usr/local/qwt-<qwt-version>/lib/ caneda &
 
 .. note:: Usually Caneda is opened from KDE Application Launcher or by executing ``caneda`` from command line, but Qwt is installed by default into a folder where the operating system cannot locate it. 
 
+The temporary folder ``~/temp_caneda`` may be deleted at this point.
 
