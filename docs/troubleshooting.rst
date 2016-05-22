@@ -10,13 +10,13 @@ To locate an issue, please enter a few keywords at **Search docs** or use the do
 Libraries
 *********
 
-**NO COMPONENTS ARE LISTED AFTER A REINSTALLATION WITH A FOLDER LOCATION CHANGE**
+**NO COMPONENTS ARE LISTED AFTER REINSTALLING CANEDA INTO A DIFFERENT FOLDER**
 
-If Caneda was reinstalled to another folder location, when opened, it show few components available, or none at all.
+After reinstalling Caneda to a different system folder, it shows few or no components available at the sidebar browser.
 
-This is due to the old paths configuration, which points to libraries that are no longer there.
+This happens is because an obsolete configuration file is pointing to an empty library path.
 
-To regenerate the default libraries database, go to *Settings* and delete one by one every library path. Then close Caneda and open it again. The issue should now be fixed.
+Go to *Settings* and delete every library path one by one. Close the application and then open it again. Caneda will complete the missing library paths with default values and the components will be shown again at the sidebar browser.
 
 ***********
 Compilation
@@ -47,7 +47,7 @@ It is also recommended to install the optional package ``ngspice`` (simulation e
 
 To install a package from the *non-free* Debian repository, first edit **/etc/apt/sources.list**, add the keyword **non-free** at the end of the distribution description (e.g. ``deb http://ftp.us.debian.org/debian/ stable main non-free``) and then execute ``aptitude update`` as root. Finally, execute ``aptitude install <package>``.
 
-**CMAKE ERROR AT CMAKELISTS.TXT:3 (PROJECT): NO CMAKE_CXX_COMPILER COULD BE FOUND.**
+**NO CMAKE_CXX_COMPILER COULD BE FOUND**
 
 After executing ``cmake ../`` to install Caneda, the following error occurs:
 
@@ -87,7 +87,7 @@ It is also recommended to install the optional package ``ngspice`` (simulation e
 
 To install a package from the *non-free* Debian repository, first edit **/etc/apt/sources.list**, add the keyword **non-free** at the end of the distribution description (e.g. ``deb http://ftp.us.debian.org/debian/ stable main non-free``) and then execute ``aptitude update`` as root. Finally, execute ``aptitude install <package>``.
 
-**CMAKE ERROR AT CMAKELISTS.TXT:14 (FIND_PACKAGE): BY NOT PROVIDING "FINDQT5WIDGETS.CMAKE" IN CMAKE_MODULE_PATH...**
+**BY NOT PROVIDING "FINDQT5WIDGETS.CMAKE" IN CMAKE_MODULE_PATH...**
 
 After executing ``cmake ../`` to install Caneda, the following error occurs:
 
@@ -134,7 +134,7 @@ It is also recommended to install the optional package ``ngspice`` (simulation e
 
 To install a package from the *non-free* Debian repository, first edit **/etc/apt/sources.list**, add the keyword **non-free** at the end of the distribution description (e.g. ``deb http://ftp.us.debian.org/debian/ stable main non-free``) and then execute ``aptitude update`` as root. Finally, execute ``aptitude install <package>``.
 
-**MAKE ERROR AT CMAKELISTS.TXT:15 (FIND_PACKAGE): BY NOT PROVIDING "FINDQT5SVG.CMAKE" IN CMAKE_MODULE_PATH...**
+**BY NOT PROVIDING "FINDQT5SVG.CMAKE" IN CMAKE_MODULE_PATH...**
 
 After executing ``cmake ../`` to install Caneda, the following error occurs:
 
@@ -175,7 +175,7 @@ It is also recommended to install the optional package ``ngspice`` (simulation e
 
 To install a package from the *non-free* Debian repository, first edit **/etc/apt/sources.list**, add the keyword **non-free** at the end of the distribution description (e.g. ``deb http://ftp.us.debian.org/debian/ stable main non-free``) and then execute ``aptitude update`` as root. Finally, execute ``aptitude install <package>``.
 
-**MAKE ERROR AT CMAKELISTS.TXT:17 (FIND_PACKAGE): BY NOT PROVIDING "FINDQT5LINGUISTTOOLS.CMAKE" IN CMAKE_MODULE_PATH...**
+**BY NOT PROVIDING "FINDQT5LINGUISTTOOLS.CMAKE" IN CMAKE_MODULE_PATH...**
 
 After executing ``cmake ../`` to install Caneda, the following error occurs:
 
@@ -215,7 +215,7 @@ It is also recommended to install the optional package ``ngspice`` (simulation e
 
 To install a package from the *non-free* Debian repository, first edit **/etc/apt/sources.list**, add the keyword **non-free** at the end of the distribution description (e.g. ``deb http://ftp.us.debian.org/debian/ stable main non-free``) and then execute ``aptitude update`` as root. Finally, execute ``aptitude install <package>``.
 
-**CMAKE ERROR AT /USR/LIB/X86_64-LINUX-GNU/CMAKE/QT5LINGUISTTOOLS/QT5LINGUISTTOOLSCONFIG.CMAKE:22 (MESSAGE)...**
+**/USR/LIB/X86_64-LINUX-GNU/CMAKE/QT5LINGUISTTOOLS/QT5LINGUISTTOOLSCONFIG.CMAKE:22...**
 
 After executing ``cmake ../`` to install Caneda, the following error occurs:
 
@@ -253,7 +253,7 @@ It is also recommended to install the optional package ``ngspice`` (simulation e
 
 To install a package from the *non-free* Debian repository, first edit **/etc/apt/sources.list**, add the keyword **non-free** at the end of the distribution description (e.g. ``deb http://ftp.us.debian.org/debian/ stable main non-free``) and then execute ``aptitude update`` as root. Finally, execute ``aptitude install <package>``.
 
-**CMAKE ERROR AT /USR/SHARE/CMAKE-3.0/MODULES/FINDPACKAGEHANDLESTANDARDARGS.CMAKE:136 (MESSAGE)...**
+**/USR/SHARE/CMAKE-3.0/MODULES/FINDPACKAGEHANDLESTANDARDARGS.CMAKE:136...**
 
 After executing ``cmake ../`` to install Caneda, the following error occurs:
 
@@ -289,7 +289,7 @@ It is also recommended to install the optional package ``ngspice`` (simulation e
 
 To install a package from the *non-free* Debian repository, first edit **/etc/apt/sources.list**, add the keyword **non-free** at the end of the distribution description (e.g. ``deb http://ftp.us.debian.org/debian/ stable main non-free``) and then execute ``aptitude update`` as root. Finally, execute ``aptitude install <package>``.
 
-**CANEDA: ERROR WHILE LOADING SHARED LIBRARIES: LIBQWT.SO.6: CANNOT OPEN SHARED OBJECT FILE: NO SUCH FILE OR DIRECTORY**
+**LIBQWT.SO.6: CANNOT OPEN SHARED OBJECT FILE: NO SUCH FILE OR DIRECTORY**
 
 After executing ``caneda`` from a terminal emulator, the following error is displayed:
 
