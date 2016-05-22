@@ -10,7 +10,7 @@ To locate an issue, please enter a few keywords at **Search docs** or use the do
 Libraries
 *********
 
-**No components are listed after a reinstallation with a folder location change**
+**NO COMPONENTS ARE LISTED AFTER A REINSTALLATION WITH A FOLDER LOCATION CHANGE**
 
 If Caneda was reinstalled to another folder location, when opened, it show few components available, or none at all.
 
@@ -18,13 +18,11 @@ This is due to the old paths configuration, which points to libraries that are n
 
 To regenerate the default libraries database, go to *Settings* and delete one by one every library path. Then close Caneda and open it again. The issue should now be fixed.
 
-.. _compilation:
-
 ***********
 Compilation
 ***********
 
-**bash: cmake: command not found**
+**BASH: CMAKE: COMMAND NOT FOUND**
 
 After executing ``cmake ../`` to install Caneda, the following error occurs:
 
@@ -49,7 +47,7 @@ It is also recommended to install the optional package ``ngspice`` (simulation e
 
 To install a package from the *non-free* Debian repository, first edit **/etc/apt/sources.list**, add the keyword **non-free** at the end of the distribution description (e.g. ``deb http://ftp.us.debian.org/debian/ stable main non-free``) and then execute ``aptitude update`` as root. Finally, execute ``aptitude install <package>``.
 
-**CMake Error at CMakeLists.txt:3 (PROJECT): No CMAKE_CXX_COMPILER could be found.**
+**CMAKE ERROR AT CMAKELISTS.TXT:3 (PROJECT): NO CMAKE_CXX_COMPILER COULD BE FOUND.**
 
 After executing ``cmake ../`` to install Caneda, the following error occurs:
 
@@ -88,8 +86,8 @@ It is recommended to install the following packages at once, to avoid further co
 It is also recommended to install the optional package ``ngspice`` (simulation engine) as follows: ``aptitude install ngspice``.
 
 To install a package from the *non-free* Debian repository, first edit **/etc/apt/sources.list**, add the keyword **non-free** at the end of the distribution description (e.g. ``deb http://ftp.us.debian.org/debian/ stable main non-free``) and then execute ``aptitude update`` as root. Finally, execute ``aptitude install <package>``.
-  
-**CMake Error at CMakeLists.txt:14 (FIND_PACKAGE): By not providing "FindQt5Widgets.cmake" in CMAKE_MODULE_PATH...**
+
+**CMAKE ERROR AT CMAKELISTS.TXT:14 (FIND_PACKAGE): BY NOT PROVIDING "FINDQT5WIDGETS.CMAKE" IN CMAKE_MODULE_PATH...**
 
 After executing ``cmake ../`` to install Caneda, the following error occurs:
 
@@ -136,7 +134,7 @@ It is also recommended to install the optional package ``ngspice`` (simulation e
 
 To install a package from the *non-free* Debian repository, first edit **/etc/apt/sources.list**, add the keyword **non-free** at the end of the distribution description (e.g. ``deb http://ftp.us.debian.org/debian/ stable main non-free``) and then execute ``aptitude update`` as root. Finally, execute ``aptitude install <package>``.
 
-**Make Error at CMakeLists.txt:15 (FIND_PACKAGE): By not providing "FindQt5Svg.cmake" in CMAKE_MODULE_PATH...**
+**MAKE ERROR AT CMAKELISTS.TXT:15 (FIND_PACKAGE): BY NOT PROVIDING "FINDQT5SVG.CMAKE" IN CMAKE_MODULE_PATH...**
 
 After executing ``cmake ../`` to install Caneda, the following error occurs:
 
@@ -177,7 +175,7 @@ It is also recommended to install the optional package ``ngspice`` (simulation e
 
 To install a package from the *non-free* Debian repository, first edit **/etc/apt/sources.list**, add the keyword **non-free** at the end of the distribution description (e.g. ``deb http://ftp.us.debian.org/debian/ stable main non-free``) and then execute ``aptitude update`` as root. Finally, execute ``aptitude install <package>``.
 
-**Make Error at CMakeLists.txt:17 (FIND_PACKAGE): By not providing "FindQt5LinguistTools.cmake" in CMAKE_MODULE_PATH...**
+**MAKE ERROR AT CMAKELISTS.TXT:17 (FIND_PACKAGE): BY NOT PROVIDING "FINDQT5LINGUISTTOOLS.CMAKE" IN CMAKE_MODULE_PATH...**
 
 After executing ``cmake ../`` to install Caneda, the following error occurs:
 
@@ -217,7 +215,7 @@ It is also recommended to install the optional package ``ngspice`` (simulation e
 
 To install a package from the *non-free* Debian repository, first edit **/etc/apt/sources.list**, add the keyword **non-free** at the end of the distribution description (e.g. ``deb http://ftp.us.debian.org/debian/ stable main non-free``) and then execute ``aptitude update`` as root. Finally, execute ``aptitude install <package>``.
 
-**CMake Error at /usr/lib/x86_64-linux-gnu/cmake/Qt5LinguistTools/Qt5LinguistToolsConfig.cmake:22 (message)...**
+**CMAKE ERROR AT /USR/LIB/X86_64-LINUX-GNU/CMAKE/QT5LINGUISTTOOLS/QT5LINGUISTTOOLSCONFIG.CMAKE:22 (MESSAGE)...**
 
 After executing ``cmake ../`` to install Caneda, the following error occurs:
 
@@ -255,7 +253,7 @@ It is also recommended to install the optional package ``ngspice`` (simulation e
 
 To install a package from the *non-free* Debian repository, first edit **/etc/apt/sources.list**, add the keyword **non-free** at the end of the distribution description (e.g. ``deb http://ftp.us.debian.org/debian/ stable main non-free``) and then execute ``aptitude update`` as root. Finally, execute ``aptitude install <package>``.
 
-**CMake Error at /usr/share/cmake-3.0/Modules/FindPackageHandleStandardArgs.cmake:136 (message)...**
+**CMAKE ERROR AT /USR/SHARE/CMAKE-3.0/MODULES/FINDPACKAGEHANDLESTANDARDARGS.CMAKE:136 (MESSAGE)...**
 
 After executing ``cmake ../`` to install Caneda, the following error occurs:
 
@@ -291,7 +289,7 @@ It is also recommended to install the optional package ``ngspice`` (simulation e
 
 To install a package from the *non-free* Debian repository, first edit **/etc/apt/sources.list**, add the keyword **non-free** at the end of the distribution description (e.g. ``deb http://ftp.us.debian.org/debian/ stable main non-free``) and then execute ``aptitude update`` as root. Finally, execute ``aptitude install <package>``.
 
-**caneda: error while loading shared libraries: libqwt.so.6: cannot open shared object file: No such file or directory**
+**CANEDA: ERROR WHILE LOADING SHARED LIBRARIES: LIBQWT.SO.6: CANNOT OPEN SHARED OBJECT FILE: NO SUCH FILE OR DIRECTORY**
 
 After executing ``caneda`` from a terminal emulator, the following error is displayed:
 
