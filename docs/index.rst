@@ -1,27 +1,38 @@
-Welcome to Caneda's documentation!
-==================================
-Caneda is an open source EDA software suite focused on ease of use and portability. Its main goal is to handle the complete design process: schematic capture, simulation and circuit layout or PCB. Caneda aims to support all kinds of circuit simulation types, e.g. DC, AC, S-parameter and harmonic balance analysis.
+###########################
+Caneda Documentation Center
+###########################
+
+Caneda is an open source EDA software suite focused on ease of use and portability. 
+Its main goal is to handle the complete design process: schematic capture, simulation and circuit layout or PCB. 
+Caneda aims to support all kinds of circuit simulation types, e.g. DC, AC, S-parameter and harmonic balance analysis.
 
 .. image:: /images/caneda.png
 
-For details visit the project's homepage:
+For details visit the `Project Homepage`_.
 
-http://www.caneda.org
+.. _`Project Homepage`: http://caneda.org
 
-Contents:
+*****************
+Table of Contents
+*****************
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 5
    
-   install
+   installation
    gettingstarted
    libraries
+   compilation
 
+**********
 Contribute
-==========
+**********
+
 - Issue Tracker: http://github.com/Caneda/Caneda/issues
 - Source Code: http://github.com/Caneda/Caneda
 
+*******
 License
-=======
-The project is licensed under the GPLv2 license.
+*******
+
+This project is licensed under GPLv2.

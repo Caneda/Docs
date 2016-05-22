@@ -29,13 +29,13 @@ The following libraries must be installed on the system in order to compile Cane
   * Qt 5
   * Qwt 6.1.2 or later
   
-Although the package *Ngspice*  is optional, it is strongly recommended to install it to add simulation capabilities to Caneda.
+Although the package **Ngspice**  is optional, it is strongly recommended to install it in order to add simulation capabilities to Caneda.
   
 **Source Code**
 
 Caneda source code repository can be locally cloned using **git** as follows:
 
-.. code-block:: example
+.. code-block:: none
 
   $ git clone https://github.com/caneda/caneda
 
@@ -46,7 +46,7 @@ Alternatively, download either `master`_ or `develop`_ tarball from the GitHub r
 .. _`master`:  https://github.com/Caneda/Caneda/tarball/master
 .. _`develop`: https://github.com/Caneda/Caneda/tarball/develop
     
-.. code-block:: example
+.. code-block:: none
 
   $ tar -xvf Caneda-Caneda-<version>.tar.gz
 
@@ -54,7 +54,7 @@ Alternatively, download either `master`_ or `develop`_ tarball from the GitHub r
 
 Create a new folder ``build`` at the top of Caneda source code structure and change into it:
   
-.. code-block:: example
+.. code-block:: none
 
   $ cd caneda
   $ mkdir build
@@ -62,14 +62,14 @@ Create a new folder ``build`` at the top of Caneda source code structure and cha
   
 Configure and compile the source package:
 
-.. code-block:: example
+.. code-block:: none
 
   $ cmake ../
   $ make
 
 Finally, install Caneda into the system (requires root privileges):
 
-.. code-block:: example
+.. code-block:: none
 
   # make install
   
@@ -81,7 +81,7 @@ Run ``cmake --help`` for details on some of the pertinent environment variables.
 CMake can take initial values for configuration parameters by setting environment variables from the command line. 
 Here is an example:
 
-.. code-block:: example
+.. code-block:: none
 
   $ cmake CC=gcc-6 CXX=g++-6 CFLAGS=-O2 LIBS=-lposix ../
 
@@ -100,7 +100,7 @@ In addition, if you use a non-standard directory layout, you can give options li
 
 To associate Caneda file types with the application itself, execute the following command:
 
-.. code-block:: example
+.. code-block:: none
 
   $ update-mime-database /usr/local/share/mime
 
@@ -117,7 +117,7 @@ Consider the prefix ``$`` for non-privileged user commands and the prefix ``#`` 
 
 Use **aptitude** to install the required/suggested packages:
 
-.. code-block:: example
+.. code-block:: none
 
   # aptitude install git cmake g++ qtbase5-dev libqt5svg5-dev qttools5-dev qttools5-dev-tools ngspice libqwt-qt5-dev 
     
@@ -125,7 +125,7 @@ Use **aptitude** to install the required/suggested packages:
 
 Create a temporary folder and change to it:
 
-.. code-block:: example
+.. code-block:: none
 
   $ cd ~
   $ mkdir temp_caneda
@@ -133,7 +133,7 @@ Create a temporary folder and change to it:
       
 Get the latest Caneda *git* snapshot:
 
-.. code-block:: example
+.. code-block:: none
 
   $ git clone https://github.com/caneda/caneda
 
@@ -144,13 +144,13 @@ Alternatively, download either `master`_ or `develop`_ tarball from the GitHub r
 .. _`master`:  https://github.com/Caneda/Caneda/tarball/master
 .. _`develop`: https://github.com/Caneda/Caneda/tarball/develop
   
-.. code-block:: example
+.. code-block:: none
 
   $ tar -xvf Caneda-Caneda-<version>.tar.gz
     
 Create the folder ``build`` at the top of the source code structure and change into it:
 
-.. code-block:: example
+.. code-block:: none
 
   $ cd caneda
   $ mkdir build
@@ -158,14 +158,14 @@ Create the folder ``build`` at the top of the source code structure and change i
     
 Configure the source package and start the compilation process:
 
-.. code-block:: example
+.. code-block:: none
 
   $ cmake ../
   $ make
     
 Install Caneda into the system by executing:
 
-.. code-block:: example
+.. code-block:: none
 
   # make install
       
@@ -183,7 +183,7 @@ Consider the prefix ``$`` for non-privileged user commands and the prefix ``#`` 
 
 Use **aptitude** to install the required/suggested packages:
 
-.. code-block:: example
+.. code-block:: none
 
   # aptitude install git cmake g++ qtbase5-dev libqt5svg5-dev qttools5-dev qttools5-dev-tools ngspice
 
@@ -191,7 +191,7 @@ Use **aptitude** to install the required/suggested packages:
   
 Create a temporary folder and change to it:
 
-.. code-block:: example
+.. code-block:: none
 
   $ cd ~
   $ mkdir temp_caneda
@@ -203,13 +203,13 @@ Download the latest `Qwt libraries`_  (e.g. release 6.1.2) and unpack it:
 
 .. _`Qwt libraries`: https://sourceforge.net/projects/qwt/files/latest/download
 
-.. code-block:: example
+.. code-block:: none
 
   $ tar -xvf qwt-6.1.2.tar.bz2
 
 Change to Qwt folder to configure and compile the source code:
 
-.. code-block:: example
+.. code-block:: none
 
   $ cd qwt-6.1.2
   $ /usr/lib/x86_64-linux-gnu/qt5/bin/qmake qwt.pro
@@ -217,19 +217,19 @@ Change to Qwt folder to configure and compile the source code:
 
 Install Qwt into the system:
 
-.. code-block:: example
+.. code-block:: none
 
   # make install
   
 Go back to the temporary folder created earlier:
 
-.. code-block:: example
+.. code-block:: none
 
   $ cd ~/temp_caneda
 
 Get the latest Caneda *git* snapshot:
 
-.. code-block:: example
+.. code-block:: none
 
   $ git clone https://github.com/caneda/caneda
 
@@ -240,13 +240,13 @@ Alternatively, download either `master`_ or `develop`_ tarball from the GitHub r
 .. _`master`:  https://github.com/Caneda/Caneda/tarball/master
 .. _`develop`: https://github.com/Caneda/Caneda/tarball/develop
   
-.. code-block:: example
+.. code-block:: none
 
   $ tar -xvf Caneda-Caneda-<version>.tar.gz
     
 Create the folder ``build`` at the top of the source code structure and change into it:
 
-.. code-block:: example
+.. code-block:: none
 
   $ cd caneda
   $ mkdir build
@@ -254,20 +254,20 @@ Create the folder ``build`` at the top of the source code structure and change i
     
 Configure the source package and start the compilation process:
 
-.. code-block:: example
+.. code-block:: none
 
   $ cmake ../
   $ make
     
 Install Caneda into the system by executing:
 
-.. code-block:: example
+.. code-block:: none
 
   # make install
       
 To open Caneda, point explicitly to Qwt 6.1.2 library path as follows:
     
-.. code-block:: example
+.. code-block:: none
 
   $ LD_LIBRARY_PATH=/usr/local/qwt-6.1.2/lib/ caneda &
 

@@ -1,13 +1,16 @@
+###############
 Getting Started
-===============
+###############
+
 This is a brief introduction to Caneda's functionalities to get you ready on track. There are basically two ways to get started using Caneda right from scratch:
 
 * Using the schematic context and creating a new design
 * Using one of the circuit examples available from the *Example Circuits* repository.
 
-
+**********************
 Interface Introduction
-----------------------
+**********************
+
 In the following image the Caneda main window is shown, along with the initial tools and default configuration. The user interface is fully configurable, and you can show, hide or move any tool to your personal preferences.
 
 .. image:: /images/mainwindow.png
@@ -35,9 +38,10 @@ Finally, the folder browser allows you to easily access your files from a conven
 
 .. image:: /images/folderBrowser.png
 
-
+*******************
 Create a New Design
--------------------
+*******************
+
 In the following example, we will introduce the basic usage by creating a simple opamp based amplifier. To start a new design, click on the *New* icon from the file toolbar.
 
 .. image:: /images/document-new.png
@@ -69,9 +73,10 @@ To get a meaningful result, you should also add a source.
 
 Once you are done, you are ready to perform your first simulation in Caneda.
 
-
+**********************
 Performing Simulations
-----------------------
+**********************
+
 To start a new simulation, click on the simulate tool in the main toolbar.
 
 .. image:: /images/simulate.png
@@ -84,16 +89,18 @@ To select the displayed waveforms, click on the *Visible* option from the simula
 
 .. image:: /images/selectingWaveforms.png
 
-
+***********
 Text editor
------------
+***********
+
 Caneda has an embedded text editor, which allows you to create and design all kinds of text code based simulations. The most common forms are spice and hdl (verilog and vhdl) simulations. To help you realize your design, a ready to use set of templates is available from the text sidebar. Once you have your design ready, just click on the simulate tool as in the above example and Caneda will perform the simulation for you, using the appropiate tools.
 
 .. image:: /images/texteditor.png
 
-
+****************
 Circuit Examples
-----------------
+****************
+
 There is a repository hosted at `Example Circuits <https://github.com/Caneda/Examples>`_ which contains example circuits for Caneda, ready to use. The example circuits are continuously updated and improved, and periodically new circuits are added.
 
 To try any circuit, simply download the selected schematic to your machine and open it using Caneda. All circuits are ready for simulation using Caneda's tools. Inside each schematic there are specific details to the circuit, where applicable.
