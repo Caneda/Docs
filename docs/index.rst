@@ -23,6 +23,7 @@ Table of Contents
    installation
    gettingstarted
    libraries
+   troubleshooting
 
 **********
 Contribute
