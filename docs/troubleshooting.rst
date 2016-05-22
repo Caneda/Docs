@@ -25,9 +25,6 @@ To regenerate the default libraries database, go to *Settings* and delete one by
 Compilation
 ***********
 
-GNU/Linux Debian 8 Jessie/Stable
-================================
-
 bash: cmake: command not found
 ------------------------------
 
