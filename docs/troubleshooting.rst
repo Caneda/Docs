@@ -6,12 +6,11 @@ Troubleshooting
 
 To locate an issue, please enter a few keywords at **Search docs** or use the document tree on the left.
 
-*******
-General
-*******
+*********
+Libraries
+*********
 
-No components are listed after a reinstallation with a folder location change
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**No components are listed after a reinstallation with a folder location change**
 
 If Caneda was reinstalled to another folder location, when opened, it show few components available, or none at all.
 
