@@ -13,7 +13,7 @@ Among the main features of *Read the Docs*, you can find:
 
 You can read Caneda's help online, generated automatically from this repository at:
 
-http://caneda.readthedocs.io/en/latest/
+http://docs.caneda.org
 
 
 Adding Documentation
