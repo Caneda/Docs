@@ -24,7 +24,7 @@ To review your changes before commiting, run the following command from a termin
 
 ``$ make html``
 
-The previous command will created a local copy of the html documents, and will place them in the ``_build`` folder.
+The previous command will create a local copy of the html documents and place them in the ``_build`` folder.
 
 
 Read the Docs Sphinx Theme
