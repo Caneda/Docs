@@ -66,7 +66,7 @@ You can give *cmake* initial values for configuration parameters by setting vari
 
 Installation Directory
 ----------------------
-By default, ``make install`` will install the package's files in ``/usr/local/bin``, ``/usr/local/man``, etc.  You can specify an installation prefix other than ``/usr/local`` by giving *cmake* the option ``--prefix=PATH``.
+By default, ``make install`` will install the package's files in ``/usr/local/bin``, ``/usr/local/man``, etc.  You can specify an installation prefix other than ``/usr/local`` by giving *cmake* the option ``-DCMAKE_INSTALL_PREFIX:PATH=PATH``.
 
 You can specify separate installation prefixes for architecture-specific files and architecture-independent files.  If you give *cmake* the option ``--exec-prefix=PATH``, the package will use *PATH* as the prefix for installing programs and libraries. Documentation and other data files will still use the regular prefix.
 
